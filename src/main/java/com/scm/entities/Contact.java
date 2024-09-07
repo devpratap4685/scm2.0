@@ -29,6 +29,6 @@ public class Contact {
      @ManyToOne
     private User user;    
 
-    @OneToMany(mappedBy="Contact",cascade=CascadeType.ALL,fetch=FetchType.EAGER,orphanRemoval=true)
+    @OneToMany(mappedBy="contact",cascade=CascadeType.ALL,fetch=FetchType.EAGER,orphanRemoval=true)
     private List<SocialLink>links=new ArrayList<>();
 }
